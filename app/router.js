@@ -14,6 +14,8 @@ Router.map(function() {
     this.route('new');
   });
   this.route('question', { path: 'questions/:id' });
+  this.route('create', { path: 'questions/new' });
+  this.route('edit', { path: 'questions/:id/edit' });
 });
 
 export default Router;

@@ -1,10 +1,14 @@
 <div class="question-title">
   <h2>Expert Advice</h2>
   <h6>Get Answers to difficult questions</h6>
-</div>
-<div>
-  <input class="search-box" type="text" placeholder="Search..">
-  <button class="primary-btn">Ask a Question</button>
+  <div class="form-group row search-box">
+    <div class="col-10">
+      <input class="form-control mb-2" type="text" placeholder="Search" id="example-text-input">
+    </div>
+    {{#link-to "create"}}
+      <button class="primary-btn">Ask a Question</button>
+    {{/link-to}}
+  </div>
 </div>
 <table class="question-table responsive">
   <tr>
@@ -21,7 +25,9 @@
           {{/link-to}}
         </td>
         <td>
-          <button class="btn btn-sm btn-outline-info">Edit</button>
+          {{#link-to "edit" question.id }}
+            <button class="btn btn-sm btn-outline-info">Edit</button>
+          {{/link-to}}
         </td>
         <td>
           <button type="button" class="btn btn-sm btn-outline-danger" onClick={{action "deleteQuestion" question}}>

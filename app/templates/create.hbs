@@ -1,0 +1,11 @@
+<form class="question-title" onsubmit={{action "createQuestion"}}>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Title</label>
+    {{input type="text" class="form-control" placeholder="What is Ember?" value=title }}
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Body</label>
+    {{textarea class="form-control" id="exampleFormControlTextarea1" rows="3" value=body }}
+  </div>
+  <button type="submit" class="btn btn-success">Create</button>
+</form>

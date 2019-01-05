@@ -15,7 +15,11 @@
     {{#each model as |question|}}
       <tr>
         <td>{{question.title.length}}k</td>
-        <td class="title">{{question.title}}</td>
+        <td>
+          {{#link-to "question" question.id }}
+            {{question.title}}
+          {{/link-to}}
+        </td>
       </tr>
     {{/each}}
   </tbody>

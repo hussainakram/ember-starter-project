@@ -1,0 +1,22 @@
+<div class="question-title">
+  <h2>Expert Advice</h2>
+  <h6>Get Answers to difficult questions</h6>
+</div>
+<div>
+  <input class="search-box" type="text" placeholder="Search..">
+  <button class="primary-btn">Ask a Question</button>
+</div>
+<table class="question-table">
+  <tr>
+    <th>Views</th>
+    <th class="title">Questions</th>
+  </tr>
+  <tbody>
+    {{#each model as |question|}}
+      <tr>
+        <td>{{question.title.length}}k</td>
+        <td class="title">{{question.title}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

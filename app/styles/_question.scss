@@ -1,0 +1,43 @@
+.question-title {
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.title {
+  padding-left: 20px;
+}
+.question-table {
+  margin-left: 20%;
+}
+input[type=text] {
+  width: 130px;
+  margin-left: 20%;
+  border-radius: 5px;
+  background-color: #f3f5ee;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 15%;
+}
+.primary-btn {
+  position: relative;
+  background-color: #2196F3;
+  border: none;
+  font-size: 16px;
+  color: #FFFFFF;
+  border-radius: 3px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+.primary-btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

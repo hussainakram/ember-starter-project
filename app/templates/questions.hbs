@@ -6,7 +6,7 @@
   <input class="search-box" type="text" placeholder="Search..">
   <button class="primary-btn">Ask a Question</button>
 </div>
-<table class="question-table">
+<table class="question-table responsive">
   <tr>
     <th>Views</th>
     <th class="title">Questions</th>
@@ -19,6 +19,14 @@
           {{#link-to "question" question.id }}
             {{question.title}}
           {{/link-to}}
+        </td>
+        <td>
+          <button class="btn btn-sm btn-outline-info">Edit</button>
+        </td>
+        <td>
+          <button type="button" class="btn btn-sm btn-outline-danger" onClick={{action "deleteQuestion" question}}>
+            Delete
+          </button>
         </td>
       </tr>
     {{/each}}
